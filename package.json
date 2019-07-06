@@ -1,23 +1,30 @@
 {
-  "name": "tour_n_travel",
-  "version": "1.0.0",
-  "description": "Event Management Co.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/imshivamgupta/tour_n_travel.git"
-  },
-  "keywords": [
-    "Event",
-    "Management"
-  ],
-  "author": "Shivam Gupta",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/imshivamgupta/tour_n_travel/issues"
-  },
-  "homepage": "https://github.com/imshivamgupta/tour_n_travel#readme"
+    "name": "tour_n_travel",
+    "version": "1.0.0",
+    "description": "Event Management Co.",
+    "main": "index.js",
+    "scripts": {
+        "sass:compile": "sass ./website/scss:./website/css/ --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/imshivamgupta/tour_n_travel.git"
+    },
+    "keywords": [
+        "Event",
+        "Management"
+    ],
+    "author": "Shivam Gupta",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/imshivamgupta/tour_n_travel/issues"
+    },
+    "homepage": "https://github.com/imshivamgupta/tour_n_travel#readme",
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.4.1"
+    },
+    "devDependencies": {
+        "sass": "^1.22.3"
+    }
 }

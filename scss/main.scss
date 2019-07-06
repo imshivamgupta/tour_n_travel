@@ -1,0 +1,136 @@
+// Main
+@import './variables';
+@import './overrides';
+// Componets
+@import './components/header';
+// Pages
+@import './pages/homepage';
+// header
+header {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    .brand {
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .nav-component {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        .social-media {
+            display: flex;
+            justify-content: flex-end;
+            li.nav-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                background-color: #a0a0a0;
+                border-radius: 5rem;
+                margin-left: .6rem;
+                transition: all .4s ease-in-out;
+                a {
+                    font-size: 18px;
+                }
+                &:hover {
+                    background-color: maroon;
+                }
+            }
+        }
+        nav {
+            font-family: 'Roboto Condensed', sans-serif;
+            ul {
+                justify-content: center;
+                li.nav-item {
+                    a.nav-link {
+                        font-size: 24px;
+                        padding: 0 2rem;
+                        &.active {
+                            font-weight: 700;
+                        }
+                    }
+                    &:not(:first-child) {
+                        border-left: 1px solid #a0a0a0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tab-filter {
+    margin-top: 4rem;
+    nav {
+        a.nav-link {
+            font-size: 20px;
+            font-weight: 100;
+            text-transform: uppercase;
+            color: #707070;
+            border-radius: 0;
+            &:hover {
+                color: #29adca;
+            }
+            &:not(:first-child) {
+                border-left: 1px solid #a0a0a0;
+            }
+        }
+    }
+}
+
+.grid-group {
+    margin-top: 3rem;
+    display: flex;
+    .big-pic-tour {
+        display: flex;
+        flex-basis: 65%;
+        img {
+            max-width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+        .text-detail {
+            padding: 2rem;
+        }
+    }
+    .trending {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-basis: 35%;
+        .places-group {
+            display: flex;
+            justify-content: space-between;
+            figure {
+                img {
+                    max-width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+.wedding {
+    &.grid-group {
+        flex-direction: row-reverse;
+        .big-pic-tour {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.corporate {
+    &.grid-group {
+        flex-direction: row-reverse;
+        .big-pic-tour {
+            flex-direction: row-reverse;
+        }
+    }
+}

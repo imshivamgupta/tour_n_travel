@@ -1,0 +1,32 @@
+    body {
+        @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,700,900|Roboto+Condensed:400,700&display=swap');
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1060px;
+        }
+    }
+    
+    .btn-cta {
+        background-color: teal;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 0;
+        &:hover,
+        &:active {
+            outline: none;
+            background-color: lighten($color: teal, $amount: 5%) !important;
+        }
+    }
+    
+    .carousel-item {
+        max-height: 400px;
+    }
+    
+    .carousel-caption {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, .3) 52%, rgba(0, 0, 0, 0.2) 100%);
+    }

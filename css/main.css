@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,500,700,900|Roboto+Condensed:400,700&display=swap");
+body {
+  font-family: 'Roboto', sans-serif; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1060px; } }
+
+.btn-cta {
+  background-color: teal;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0; }
+  .btn-cta:hover, .btn-cta:active {
+    outline: none;
+    background-color: #009a9a !important; }
+
+.carousel-item {
+  max-height: 400px; }
+
+.carousel-caption {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 52%, rgba(0, 0, 0, 0.2) 100%); }
+
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem; }
+  header .brand img {
+    width: 150px;
+    height: 150px; }
+  header .nav-component {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1; }
+    header .nav-component .social-media {
+      display: flex;
+      justify-content: flex-end; }
+      header .nav-component .social-media li.nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background-color: #a0a0a0;
+        border-radius: 5rem;
+        margin-left: .6rem;
+        transition: all .4s ease-in-out; }
+        header .nav-component .social-media li.nav-item a {
+          font-size: 18px; }
+        header .nav-component .social-media li.nav-item:hover {
+          background-color: maroon; }
+    header .nav-component nav {
+      font-family: 'Roboto Condensed', sans-serif; }
+      header .nav-component nav ul {
+        justify-content: center; }
+        header .nav-component nav ul li.nav-item a.nav-link {
+          font-size: 24px;
+          padding: 0 2rem; }
+          header .nav-component nav ul li.nav-item a.nav-link.active {
+            font-weight: 700; }
+        header .nav-component nav ul li.nav-item:not(:first-child) {
+          border-left: 1px solid #a0a0a0; }
+
+.tab-filter {
+  margin-top: 4rem; }
+  .tab-filter nav a.nav-link {
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #707070;
+    border-radius: 0; }
+    .tab-filter nav a.nav-link:hover {
+      color: #29adca; }
+    .tab-filter nav a.nav-link:not(:first-child) {
+      border-left: 1px solid #a0a0a0; }
+
+.grid-group {
+  margin-top: 3rem;
+  display: flex; }
+  .grid-group .big-pic-tour {
+    display: flex;
+    flex-basis: 65%; }
+    .grid-group .big-pic-tour img {
+      max-width: 300px;
+      height: 300px;
+      border-radius: 50%; }
+    .grid-group .big-pic-tour .text-detail {
+      padding: 2rem; }
+  .grid-group .trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 35%; }
+    .grid-group .trending .places-group {
+      display: flex;
+      justify-content: space-between; }
+      .grid-group .trending .places-group figure img {
+        max-width: 100px;
+        height: 100px;
+        border-radius: 50%; }
+
+.wedding.grid-group {
+  flex-direction: row-reverse; }
+  .wedding.grid-group .big-pic-tour {
+    flex-direction: row-reverse; }
+
+.corporate.grid-group {
+  flex-direction: row-reverse; }
+  .corporate.grid-group .big-pic-tour {
+    flex-direction: row-reverse; }

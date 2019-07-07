@@ -3,13 +3,28 @@
         font-family: 'Roboto', sans-serif;
     }
     
-    @media (min-width: 1200px) {
-        .container {
+    .container {
+        @media (min-width: 1200px) {
             max-width: 1060px;
+        }
+        @media (max-width: 576px) {
+            padding: 0;
         }
     }
     
     .btn-cta {
+        @media (max-width: 576px) {
+            display: none;
+            &.btn-mob {
+                display: block;
+            }
+        }
+        @media (min-width: 577px) {
+            display: block;
+            &.btn-mob {
+                display: none;
+            }
+        }
         background-color: teal;
         padding-left: 3rem;
         padding-right: 3rem;

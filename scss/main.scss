@@ -10,7 +10,24 @@ header {
     display: flex;
     align-items: center;
     margin-top: 1rem;
+    @media (max-width: 576px) {
+        flex-direction: column;
+        margin-top: 0.4rem;
+        ;
+    }
     .brand {
+        @media (max-width: 576px) {
+            width: 100%;
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            a.btn-mob {
+                width: 100%;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+        }
         img {
             width: 150px;
             height: 150px;
@@ -21,9 +38,17 @@ header {
         flex-direction: column;
         flex-grow: 1;
         flex-shrink: 1;
+        @media (max-width: 576px) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
         .social-media {
             display: flex;
             justify-content: flex-end;
+            @media (max-width: 576px) {
+                padding: 0;
+            }
             li.nav-item {
                 display: flex;
                 justify-content: center;
@@ -44,6 +69,11 @@ header {
         }
         nav {
             font-family: 'Roboto Condensed', sans-serif;
+            @media (max-width: 576px) {
+                padding: 0;
+                margin-right: .6rem;
+                position: relative;
+            }
             ul {
                 justify-content: center;
                 li.nav-item {
@@ -56,6 +86,26 @@ header {
                     }
                     &:not(:first-child) {
                         border-left: 1px solid #a0a0a0;
+                    }
+                }
+                @media (max-width: 576px) {
+                    position: absolute;
+                    top: 40px;
+                    right: 0;
+                    background-color: #e8e8e8;
+                    width: 150px;
+                    z-index: 100;
+                    li.nav-item {
+                        a.nav-link {
+                            font-size: 18px;
+                            padding: .5rem 1rem;
+                            &.active {
+                                font-weight: 400;
+                            }
+                        }
+                        &:not(:first-child) {
+                            border: none;
+                        }
                     }
                 }
             }

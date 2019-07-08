@@ -13,13 +13,13 @@
     }
     
     .btn-cta {
-        @media (max-width: 576px) {
+        @media (max-width: 768px) {
             display: none;
             &.btn-mob {
                 display: block;
             }
         }
-        @media (min-width: 577px) {
+        @media (min-width: 769px) {
             display: block;
             &.btn-mob {
                 display: none;

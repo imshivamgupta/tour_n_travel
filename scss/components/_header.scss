@@ -1,0 +1,106 @@
+// header
+header {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    @media (max-width: $mobile-layout) {
+        flex-direction: column;
+        margin: 0.4rem 0;
+    }
+    .brand {
+        @media (max-width: $mobile-layout) {
+            width: 100%;
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            a.btn-mob {
+                width: 100%;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+        }
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .nav-component {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        @media (max-width: $mobile-layout) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .social-media {
+            display: flex;
+            justify-content: flex-end;
+            @media (max-width: $mobile-layout) {
+                padding: 0;
+            }
+            li.nav-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                background-color: #a0a0a0;
+                border-radius: 5rem;
+                margin-left: .6rem;
+                transition: all .4s ease;
+                a {
+                    font-size: 18px;
+                }
+                &:hover {
+                    background-color: $theme-color;
+                }
+            }
+        }
+        nav {
+            font-family: 'Roboto Condensed', sans-serif;
+            @media (max-width: $mobile-layout) {
+                padding: 0;
+                margin-right: .6rem;
+                position: relative;
+            }
+            ul {
+                justify-content: center;
+                li.nav-item {
+                    a.nav-link {
+                        font-size: 24px;
+                        padding: 0 2rem;
+                        &.active {
+                            font-weight: 700;
+                        }
+                    }
+                    &:not(:first-child) {
+                        border-left: 1px solid #a0a0a0;
+                    }
+                }
+                @media (max-width: $mobile-layout) {
+                    position: absolute;
+                    top: 40px;
+                    right: 0;
+                    background-color: #e8e8e8;
+                    width: 150px;
+                    z-index: 100;
+                    li.nav-item {
+                        a.nav-link {
+                            font-size: 18px;
+                            padding: .5rem 1rem;
+                            &.active {
+                                font-weight: 400;
+                            }
+                        }
+                        &:not(:first-child) {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

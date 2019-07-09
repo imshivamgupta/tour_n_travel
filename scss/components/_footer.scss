@@ -1,0 +1,14 @@
+footer {
+    margin-top: 2rem;
+    border-top: 1px dotted #a0a0a0;
+    font-size: .8rem;
+    color: #707070;
+    nav.nav-pills {
+        justify-content: center;
+        padding-top: 1rem;
+        a.nav-item {
+            color: #707070;
+            flex: none;
+        }
+    }
+}

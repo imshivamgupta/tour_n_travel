@@ -1,48 +1,54 @@
-    body {
-        @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,700,900|Roboto+Condensed:400,700&display=swap');
-        font-family: 'Roboto', sans-serif;
+body {
+    @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,700,900|Roboto+Condensed:400,700&display=swap');
+    font-family: 'Roboto', sans-serif;
+}
+
+// Container Width
+.container {
+    @media (min-width: 1200px) {
+        max-width: 1060px;
     }
-    
-    .container {
-        @media (min-width: 1200px) {
-            max-width: 1060px;
-        }
-        @media (max-width: 576px) {
-            padding: 0;
-        }
+    @media (max-width: 576px) {
+        padding: 0;
     }
-    
-    .btn-cta {
-        @media (max-width: 768px) {
-            display: none;
-            &.btn-mob {
-                display: block;
-            }
-        }
-        @media (min-width: 769px) {
+}
+
+// Buttons
+.btn-cta {
+    @media (max-width: 768px) {
+        display: none;
+        &.btn-mob {
             display: block;
-            &.btn-mob {
-                display: none;
-            }
-        }
-        background-color: teal;
-        border-color: teal;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        border-radius: 0;
-        &:hover,
-        &:active {
-            outline: none;
-            background-color: lighten($color: teal, $amount: 5%) !important;
         }
     }
-    
-    .carousel-item {
-        max-height: 400px;
+    @media (min-width: 769px) {
+        display: block;
+        &.btn-mob {
+            display: none;
+        }
     }
-    
-    .carousel-caption {
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, .3) 52%, rgba(0, 0, 0, 0.2) 100%);
+    background: linear-gradient(to right,
+    #8a2387,
+    #e94057);
+    border-color: #8a2387;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0;
+    &:hover,
+    &:active {
+        outline: none;
+        background-color: darken($color: $theme-color, $amount: 5%) !important;
+        border-color: $theme-color;
     }
+}
+
+// Carousel Edits
+.carousel-item {
+    max-height: 400px;
+}
+
+.carousel-caption {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, .3) 52%, rgba(0, 0, 0, 0.2) 100%);
+}

@@ -57,6 +57,8 @@ textarea {
 .btn-theme {
   background-color: #e0115f;
   border-color: #e0115f; }
+  .btn-theme:hover {
+    background: #c80f55; }
 
 .detailed-heading {
   padding: 3rem 0; }

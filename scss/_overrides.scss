@@ -27,10 +27,8 @@ body {
             display: none;
         }
     }
-    background: linear-gradient(to right,
-    #8a2387,
-    #e94057);
-    border-color: #8a2387;
+    background-color: $theme-color;
+    border-color: $theme-color;
     padding-left: 3rem;
     padding-right: 3rem;
     text-transform: uppercase;

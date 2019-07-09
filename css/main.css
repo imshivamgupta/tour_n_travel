@@ -11,9 +11,8 @@ body {
     padding: 0; } }
 
 .btn-cta {
-  background: -webkit-gradient(linear, left top, right top, from(#8a2387), to(#e94057));
-  background: linear-gradient(to right, #8a2387, #e94057);
-  border-color: #8a2387;
+  background-color: #e0115f;
+  border-color: #e0115f;
   padding-left: 3rem;
   padding-right: 3rem;
   text-transform: uppercase;
@@ -31,8 +30,8 @@ body {
         display: none; } }
   .btn-cta:hover, .btn-cta:active {
     outline: none;
-    background-color: #e600e6 !important;
-    border-color: magenta; }
+    background-color: #c80f55 !important;
+    border-color: #e0115f; }
 
 .carousel-item {
   max-height: 400px; }
@@ -52,7 +51,7 @@ body {
     .detailed-heading h1.display-1 span {
       font-size: 1rem;
       font-weight: 400;
-      color: magenta; }
+      color: #e0115f; }
       @media (max-width: 768px) {
         .detailed-heading h1.display-1 span {
           display: block; } }
@@ -171,7 +170,7 @@ header {
         header .nav-component .social-media li.nav-item a {
           font-size: 18px; }
         header .nav-component .social-media li.nav-item:hover {
-          background-color: magenta; }
+          background-color: #e0115f; }
     header .nav-component nav {
       font-family: 'Roboto Condensed', sans-serif; }
       @media (max-width: 768px) {
@@ -216,7 +215,7 @@ header {
     border-radius: 0;
     background-color: transparent; }
     .tab-filter nav.nav-pills a.nav-link:hover, .tab-filter nav.nav-pills a.nav-link.active {
-      color: magenta; }
+      color: #e0115f; }
     .tab-filter nav.nav-pills a.nav-link:not(:first-child) {
       border-left: 1px solid #a0a0a0; }
   @media (max-width: 768px) {
@@ -280,7 +279,7 @@ header {
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out; }
           .grid-group .big-pic-tour .text-detail h1 a:hover {
-            color: magenta; }
+            color: #e0115f; }
   .grid-group .trending {
     display: -webkit-box;
     display: -ms-flexbox;

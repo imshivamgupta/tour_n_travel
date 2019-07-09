@@ -34,7 +34,11 @@ body {
     border-color: #e0115f; }
 
 .carousel-item {
-  max-height: 400px; }
+  max-height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center; }
 
 .carousel-caption {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), color-stop(52%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
@@ -60,12 +64,25 @@ body {
     .detailed-heading .info-sec p {
       font-size: .9rem;
       font-weight: 500; }
+    .detailed-heading .info-sec img {
+      height: 210px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center;
+      object-position: center; }
 
 .features .feature-item {
   text-align: center; }
+  @media (min-width: 768px) {
+    .features .feature-item {
+      margin: .6rem 0; } }
   .features .feature-item img {
     max-width: 178px;
     height: 178px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
     border-radius: 50%;
     -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1); }
@@ -278,6 +295,9 @@ header {
           text-decoration: none;
           -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out; }
+          @media (max-width: 768px) {
+            .grid-group .big-pic-tour .text-detail h1 a {
+              font-size: 2rem; } }
           .grid-group .big-pic-tour .text-detail h1 a:hover {
             color: #e0115f; }
   .grid-group .trending {

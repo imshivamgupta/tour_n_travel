@@ -1,0 +1,36 @@
+.about-details {
+    padding: 3rem 0;
+    h5 {
+        color: $theme-color;
+    }
+    p {
+        margin-top: 1rem;
+        font-size: .9rem;
+    }
+    ul {
+        &>li {
+            font-size: .9rem;
+            font-weight: 500;
+            margin-top: .6rem;
+            ol {
+                margin-top: .6rem;
+                list-style-type: lower-roman;
+                li {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    address {
+        font-size: .9rem;
+        font-weight: 500;
+    }
+    table {
+        font-size: .8rem;
+        td:first-child {
+            width: 70px;
+            font-weight: bold;
+            ;
+        }
+    }
+}

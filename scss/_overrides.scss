@@ -43,12 +43,34 @@ body {
 }
 
 // Carousel Edits
-.carousel-item {
-    max-height: 400px;
-    object-fit: cover;
-    object-position: center;
+.carousel-inner {
+    .carousel-item {
+        max-height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 .carousel-caption {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, .3) 52%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.form-control:focus {
+    border-color: $theme-color;
+    box-shadow: 0 0 0 0.2rem rgba(224, 17, 95, .25);
+}
+
+textarea {
+    height: 80px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-theme {
+    background-color: $theme-color;
+    border-color: $theme-color;
+    &:hover {
+        background: darken($color: $theme-color, $amount: 5%);
+    }
 }

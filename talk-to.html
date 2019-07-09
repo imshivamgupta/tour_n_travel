@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Tour & Travels</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ==== Header:Start ====-->
+        <header>
+            <div class="brand">
+                <img src="./img/logo.png" alt="Tour Agency Logo" class="img-fluid" />
+                <a href="#" class="btn btn-primary btn-cta btn-mob">talk to us</a>
+            </div>
+            <!-- Navbar Component -->
+            <div class="nav-component">
+                <!-- Social Media Handles -->
+                <div class="social-media navbar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="text-white">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-white">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-white">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-white">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Main Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="collapse navbar-collapse navbar-nav" id="mobile-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link ">home</a>
+                        </li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">press</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">blog</a></li>
+                    </ul>
+                    <a href="talk-to.html" class="btn btn-primary btn-cta">talk to us</a>
+                </nav>
+            </div>
+        </header>
+        <!-- ==== Header:End ====-->
+        <!-- ==== Carousel:Start==== -->
+        <div class="page-slider">
+            <div id="pageSlider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/about-us.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Talk To Us</h5>
+                            <p>We will be happy to help you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==== Carousel:End==== -->
+        <!-- ==== Tab links:Start==== -->
+        <div class="tab-filter">
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-item nav-link" href="tours.html">tours</a>
+                <a class="nav-item nav-link" href="wedding.html">wedding</a>
+                <a class="nav-item nav-link" href="events.html">events</a>
+                <a class="nav-item nav-link" href="medical-conf.html">Medical Conferences</a>
+            </nav>
+        </div>
+        <!-- ==== Tab links:End==== -->
+        <main class="">
+            <div class="col-12">
+                <div class="detailed-heading">
+                    <h1 class="display-1">
+                        Get In Touch
+                    </h1>
+                    <form class="py-4">
+                        <div class="form-row">
+                            <div class="form-group col-md-4 col-12">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group col-md-4 col-12">
+                                <label for="name">Name</label>
+                                <input type="password" class="form-control" id="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group col-md-4 col-12">
+                                <label for="mobile">Mobile</label>
+                                <input type="password" class="form-control" id="mobile" placeholder="Mobile Number" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="message">Message</label>
+                                <textarea class="w-100">
+
+                                </textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-theme">Send</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- ==== Footer:Start ==== -->
+        <footer>
+            <nav class="nav nav-pills nav-fill">
+                <a href="#" class="nav-item nav-link">Newsletter</a>
+                <a href="#" class="nav-item nav-link">Brochure</a>
+                <a href="#" class="nav-item nav-link">Careers</a>
+                <a href="#" class="nav-item nav-link">Sitemap</a>
+            </nav>
+            <p class="text-center">&copy;Tour n Travel Agencies</p>
+        </footer>
+        <!-- ==== Footer:End ==== -->
+    </div>
+    <script defer src="./js/jquery.slim.min.js"></script>
+    <script defer src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

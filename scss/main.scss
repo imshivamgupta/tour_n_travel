@@ -1,5 +1,6 @@
 // Main
 @import 'variables';
+@import 'mixins';
 @import 'overrides';
 @import 'utilities';
 // Components
@@ -7,4 +8,5 @@
 // Pages
 @import 'pages/homepage';
 @import 'pages/tours';
+@import 'pages/about';
 @import 'components/footer';

@@ -38,6 +38,7 @@
     }
     .big-pic-tour {
         display: flex;
+        align-items: center;
         flex-basis: 65%;
         @media (max-width: $mobile-layout) {
             flex-direction: column;
@@ -47,8 +48,7 @@
             max-width: 250px;
             height: 250px;
             object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 15px 20px rgba(0, 0, 0, .1);
+            @include box-shadow;
         }
         .text-detail {
             h1 {

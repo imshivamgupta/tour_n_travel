@@ -88,7 +88,8 @@ body {
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1); }
   .features .feature-item h3 {
     color: #707070;
-    margin-top: .8rem; }
+    margin-top: .8rem;
+    text-transform: capitalize; }
   .features .feature-item p {
     font-size: .8rem;
     font-weight: 500;
@@ -277,6 +278,8 @@ header {
     .grid-group .big-pic-tour img {
       max-width: 250px;
       height: 250px;
+      -o-object-fit: cover;
+      object-fit: cover;
       border-radius: 50%;
       -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
       box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1); }

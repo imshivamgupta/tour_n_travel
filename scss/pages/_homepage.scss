@@ -57,6 +57,9 @@
                 }
                 a {
                     font-weight: 400;
+                    @media (max-width: $mobile-layout) {
+                        font-size: 2rem;
+                    }
                     color: #a0a0a0;
                     text-decoration: none;
                     transition: all .3s ease-in-out;

@@ -44,10 +44,13 @@
             @include box-shadow();
         }
         h3 {
-            color: $heading-color;
             margin-top: 1.5rem;
             text-transform: capitalize;
             font-size: 1.2rem;
+            a {
+                color: $heading-color;
+                text-decoration: none;
+            }
         }
         p {
             font-size: .8rem;

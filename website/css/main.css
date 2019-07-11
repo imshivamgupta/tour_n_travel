@@ -106,10 +106,12 @@ textarea {
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     border-radius: .6rem; }
   .features .feature-item h3 {
-    color: #707070;
     margin-top: 1.5rem;
     text-transform: capitalize;
     font-size: 1.2rem; }
+    .features .feature-item h3 a {
+      color: #707070;
+      text-decoration: none; }
   .features .feature-item p {
     font-size: .8rem;
     font-weight: 500;
@@ -153,7 +155,7 @@ header {
         width: 100%;
         font-family: 'Roboto Condensed', sans-serif; } }
   header .brand img {
-    width: 150px;
+    width: 200px;
     height: 150px; }
   header .nav-component {
     display: -webkit-box;
@@ -441,6 +443,20 @@ header {
     .about-details table td:first-child {
       width: 70px;
       font-weight: bold; }
+  .about-details .offers h1 {
+    background-color: #e0115f;
+    display: inline-block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative; }
+    .about-details .offers h1 i {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
 
 footer {
   margin-top: 2rem;

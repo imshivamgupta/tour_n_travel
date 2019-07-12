@@ -65,6 +65,11 @@ textarea {
   .detailed-heading h1.display-1 {
     font-size: 3.6rem;
     color: #707070; }
+    .detailed-heading h1.display-1.mice {
+      font-size: 2.5rem;
+      font-weight: 400; }
+      .detailed-heading h1.display-1.mice alt {
+        color: #e0115f; }
     @media (max-width: 768px) {
       .detailed-heading h1.display-1 {
         font-size: 2.5rem; } }
